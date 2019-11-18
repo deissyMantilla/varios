@@ -1,0 +1,53 @@
+function subirImagen(peticion,respuesta){
+var usuarioId = peticion.params.id
+var imgSubida = "no hay nada"
+if(peticion.files){
+var rutaArchivo = peticion.files.img.path;
+var partirArchivo = rutaArchivo.split('//');
+var nombreArchivo = partirArchivo[2];
+var extImg = nombreArchivo.split('/');
+var extArchivo = extImg [1];
+if (extArchivo=="png" || extArchivo =="jpg"){
+
+		Logica actualizar Usuario
+
+}
+}
+
+}
+
+
+iria en en el archivo de rutas en el metodo put
+hay que tener un input tipo file
+<form "multi-load"></form> 
+
+
+nmp i connet-multiparty --save  --> se instala connet-multiparty
+
+
+En postman:
+put 
+body= form-data
+se pone en la key en nombre del parametro y se sube el archivo
+
+
+en la primera parte del archivo de la ruta:
+
+const path = require ('path'); --> modulo de nodeJs para mostrar la imagen
+const fs = require ('fs');
+
+router.get(peticion,respuesta){
+var archivo = peticion.params.imageFile;
+var rutaArchivo = '/archivos/usuario/'+ archivo;
+fs.exist(rutaArchivo, (exists)=>{
+if (exists){
+respuesta.sendFile(path,resolve(rutaArchivo));
+} else {
+resuesta.send("No existe el archivo");
+};
+});
+}
+
+
+en APP.js
+conts rutaArchivoImagen = /archivos/usuarios

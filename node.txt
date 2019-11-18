@@ -1,0 +1,40 @@
+NodeJs
+
+Ambiente de ejecucion de JS en los servidores. Maneja paquetes y modulos 
+
+Funciona con asincronismo, por lo que ahorra tiempo.
+
+Trabaja con Modulos:
+permite aislar el codigo en partes y despues comunicarlos como queramos 
+
+
+C#= c charp 
+
+NPM
+Node Package Manager
+
+npm init
+npm init --yes // crea un json con las condiciones de defecto
+npm i mongoose // se instala mongoose
+npm i nodemon --save-dev // se instala nodemon
+npm i express //se instala express
+npm i body-parser //para convertir formatos a Json
+npm uninstall // para desinstalar un programa
+
+Mongoose: es un paquete de node para mongoDB para asynchronous
+
+//ejemplo node
+//app.js
+let cancionIMP = require("./song"); //para requerir el exports de otro modulo
+//   ./ indica que es un modulo que fue creado por mi
+cancionIMP.subirCancion("imaginate");
+
+
+//song.js
+function upload(cancion) {
+  console.log("Tu cancion " + cancion + " ha sido cargada");
+}
+module.exports.subirCancion = upload; //para exportar algo
+
+
+Modelo: se le dice a la BD de que forma se requieren los datos

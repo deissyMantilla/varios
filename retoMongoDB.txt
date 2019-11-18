@@ -1,0 +1,3 @@
+use artistas//Crear base de datos
+db.generopop.save({nombre: "Dua Lipa", cancion:"electricity"})// se crea la coleccion y se agrega un documento
+db.generopop.save({nombre: "Taylor Swifth", cancion:"Calm down"})//Se agrega un documento a la coleccion 

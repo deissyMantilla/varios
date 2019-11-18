@@ -1,0 +1,59 @@
+
+en c se crea una carpeta que se llame data y dentro de esa otra que se llama db
+
+un Documento = json
+varios Json son colecciones 
+y una base de datos son varias colecciones
+
+C:\Program Files\MongoDB\Server\4.2\bin
+primero se ejecuta mongod (mongoDaimont)
+
+port=27017
+
+y luego se ejecuta Mongo
+
+//comandos mongo
+use nombredelabasededatos //crea base de datos
+db.bitMusicAm.save({name:"Deissy",image:"null"}); //se guarda un elemento en la base de datos
+ctrl+L    o    cls    para limpiar la consola
+
+nombredelabasededatos.find() // para encontrar algo
+ db.bitMusicAm.find().pretty() // para mostrar bonito
+ show dbs // para mostrar las bases de datos
+
+db.artistas.find({genero:"pop balcanico"},{_id:0, numero:0}).pretty()// busca por genero pero no muestra el id ni el numero
+db.artistas.find({letra:"A"}).pretty()// se busca por la letra A
+
+artista5 = {nombre: "Cepeda", genero:"pop", numero:4, letra:"E" }// se crea una variable con el nombre artista5
+artista6 = {nombre: "Carlos Vives", genero:"varios", numero:6, letra:"F" }// se crea una variable con el nombre artista6
+db.artistas.insert([artista5, artista6])// se insertan las variables artista5 y artista6 a la coleccion artistas
+db.artistas.find().count() // me dice cuantos documentos tiene la coleccion
+db.artistas.find({},{genero:1}).sort({genero:1}).pretty()//sort organiza la informacion por orden alfabetico 1 para ascendente y -1 desendente
+
+db.artistas.find().skip(3).pretty()//salta los 3 primeros documentos de la coleccion
+db.artistas.find().limit(1).skip(1).pretty()// salta un dato y limita los resultados a uno 
+
+db.artistas.find({ numero:{$gt:5} }).pretty()// muestra los numeros mayores a 5
+db.artistas.find({ numero:{$gte:5} }).pretty()//muestra los numero mayores e iguales a 5  
+db.artistas.find({ numero:{$lte:5} }).pretty()// lte= less than or equual
+db.artistas.find({ numero:{$gte:3,$gte:7} }).pretty()// rango entre 3 y 5
+
+
+db.artistas.update( {letra: "F" },{$set: {genero:"pop latino"} })//para hacer cambios
+db.artistas.update( {genero: "pop" },{$set: {numero:20} }, {multi:true})// con el multi:true cambia todos los numeros de genero pop
+db.artistas.update( {genero: "pop" },{$unset: {num:1} }, {multi:true})//unset es el contrario de set y elimina la propiedad que se le diga, se le pone 1 para indicar que se quiere quitar
+
+
+db.autor.remove({nombre:"Juanito"})//para eliminar un documento
+db.autor.save([{nombre:"Deissy", apellido:"Mantilla"}, {nombre:"Deissy", apellido: "Galindo"}])// se crena dos documentos 
+Si se usa revome para quitar varios elementos, los quita sin usar multi
+
+db.autor.drop() // para eliminar una coleccion 
+db.Artistes.renameCollection("Artista") // para cambiar nombre de la coleccion
+
+db.dropDatabase()// Para borrar base de datos, se debe asegurar que se este usando la base de datos que se va a borrar
+//MVC
+
+Modelo Vista Controlador: es un patron de diseño de apps
+
+El controlador es el servidor

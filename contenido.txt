@@ -1,0 +1,29 @@
+7 fallas en el curso a la octava no se entrega certificado
+
+Temario:
+html css
+Js- Vanilla - logica
+Js - objetos
+Js -jquery/Ajax
+MEAN Stak (Mongo DB - Express - Angular/reactJs (frameworks)- Node Js) Node sirve para que la app se vea en todos los navegadores
+Angular (google) (programacion orientada a objetos) /typeScript
+NodeJs
+NodeJs
+Express
+Mongo DB
+ReactJs (face)
+Eduemplea(empresa que enseña a vivir en el mundo laboral)
+Proyectos
+Proyectos
+Proyectos
+
+
+API (aplication programming Interface)
+MVC (Modelo vista controlador) - Arquitectura
+Arquitectura = forma de organizar
+Zoom = aplicacion para clase virtual
+Slak = Chat
+
+
+
+

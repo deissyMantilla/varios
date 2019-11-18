@@ -1,0 +1,7 @@
+Paginas imagenes e iconos
+https://www.flaticon.com/search/5?word=facebook
+https://unsplash.com/search/photos/playa
+https://pixabay.com/es/
+https://www.freepik.es/
+
+cambiar el contenido del nav por un div para cada item

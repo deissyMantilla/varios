@@ -1,0 +1,23 @@
+CRUD = Create Read Udpate Delete
+
+POST = Crear
+GET = leer
+PUT= actualizar
+DELETE = Borrar
+
+Postman= para hacer pruebas con post y get.
+
+Json tiene comillas en el parametro:
+{
+"name" : "Deissy",
+"Apellido": "Mantilla"
+}
+
+//modulacion es separar la ruta del controlador
+el controlador es la funcion del listener
+
+y la ruta es la direccion del listener
+
+se usan dos archivos:
+index.js = conexion a BD, listener y servidor
+app.js = metodos http

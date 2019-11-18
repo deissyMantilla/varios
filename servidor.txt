@@ -1,0 +1,19 @@
+handler = controlador
+
+El servidor escucha los eventos de la app y se la envia al controlador
+
+
+API:
+
+son endpoint que nos muestran la respresentacion de la base de datos
+
+REST:
+Representation State Transfer
+para consumir la API
+
+Metodos:
+para modificar la BD
+GET => optener
+POST => enviar
+PUT => actualizar
+DELETE => borrar

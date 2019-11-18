@@ -1,0 +1,13 @@
+Directivas Angular:
+
+Manipular comportamientos en el DOM (agregar, modificar y eliminar)
+
+1) Directivas de estructurales: ngIf ngFor ngSwitchCase
+2) Directivas de atributos: ngStyle ngClass 
+3) Directivas de Componentes: input output
+
+Instalar bootstrap --> npm i bootstrap --save
+para usar bootstrap --> @import "~bootstrap/dist/css/bootsatrp.css"; se ubica en styles.css
+
+
+ul>li*4 se ccrean 4 li en el ul
